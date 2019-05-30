@@ -1,0 +1,240 @@
+// VARIABLES
+    // Colour Variables
+
+//  MIXINS
+    // Typography
+    @mixin martel ($size: false, $color: false, $weight: false, $lh: false) {
+        font-family: 'Martel', Helvetica, Arial, sans-serif;
+        @if $size { font-size: $size; }
+        @if $color { color: $color; }
+        @if $weight { font-weight: $weight; }
+        @if $lh { line-height: $lh; }
+    }
+
+    @mixin mont ($size: false, $color: false, $weight: false, $lh: false, $trans: false) {
+        font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+        @if $size { font-size: $size; }
+        @if $color { color: $color; }
+        @if $weight { font-weight: $weight; }
+        @if $lh { line-height: $lh; }
+        @if $trans { text-transform: $trans; }
+    }
+
+    // Interactivity
+    @mixin hover {
+        transition: 0.3s;
+        &:hover,
+        &:active,
+        &:focus {
+            $hover: false;
+        }
+    }
+
+// STYLING    
+
+// Typography
+h1 {
+    font-weight: 700;
+}
+h2 {
+    font-weight: 700;
+}
+h3 {
+    font-weight: 300;
+}
+h4 {
+    @include mont($weight: 500, $trans: uppercase);
+}
+h5 {
+    @include mont($color: $darker-gray, $weight: 500, $trans: uppercase);
+}
+h6 {
+    @include mont($color: $dark-gray, $weight: 500, $trans: uppercase);
+}
+
+p {
+    font-size: 0.9rem;
+}
+b {
+    font-weight: 600;
+}
+
+// Buttons & Interactivity
+.button {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: $black;
+    border: 1px solid $light-gray;
+    border-radius: 2px;
+}
+.readmore {
+    @include mont($size:0.7rem, $weight: 500, $trans: uppercase);
+}
+
+// Containers & Modules
+main {
+    padding: 2rem;
+}
+
+.mod {
+    padding: 2rem 0;
+    + .mod {
+        border-top: 1px solid $medium-gray;
+    }
+    &-section {
+        &-about {
+            padding-bottom: 1rem;
+            border-bottom: 1px solid $medium-gray;
+            p {
+                font-size: 1rem;
+            }
+        }
+        &-event {
+            &-table {
+                th, td {
+                    font-size: 0.9rem;
+                    vertical-align: top;
+                }
+                th {
+                    text-align: right;
+                }    
+            }
+        }
+        &-membership-cell {
+            p {
+                color: $darker-gray;
+                span {
+                    @include mont($size: 0.9rem, $color: $darkest-gray, $weight: 500, $trans: uppercase);
+                }
+            }
+            + .mod-section-membership-cell {
+                border-top: 1px solid $light-gray;
+                padding-top: 1rem;
+            }
+            &:nth-of-type(2) {
+                border-top: none;
+                padding-top: 0;
+            }
+            &:nth-of-type(odd) {
+                border-right: 1px solid $light-gray;
+                padding-right: 1rem;
+            }
+            &:nth-of-type(even) {
+                padding-left: 1rem;
+            }
+        }
+        &-articles-cell {
+            + .mod-section-articles-cell {
+                border-top: 1px solid $light-gray;
+                padding-top: 1.2rem;
+            }
+        }
+        &-publications-cell {
+            + .mod-section-publications-cell {
+                border-top: 1px solid $light-gray;
+                padding-top: 1.2rem;
+            }
+        }
+        &-reading-cell {
+            + .mod-section-reading-cell {
+                border-top: 1px solid $light-gray;
+                padding-top: 1.2rem;
+            }
+        }
+        &-reading-primary {
+            border-bottom: 1px solid $light-gray;
+            margin-bottom: 1.2rem;
+        }
+        &-projects-cell {
+            + .mod-section-projects-cell {
+                border-top: 1px solid $light-gray;
+                padding-top: 1.2rem;
+            }
+        }
+    }
+}
+
+// Images
+.img-styling {
+    margin-bottom: 0.8rem;
+}
+
+
+
+@include breakpoint(medium) {
+    // Containers & Modules
+    main {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+    .column-left {
+        margin-top: 2rem;
+        padding-right: 2rem;
+        border-right: 1px solid $medium-gray;
+    }
+    .column-right {
+        margin-top: 2rem;
+        padding-left: 2rem;
+    }
+    .mod-section {
+        &-fw {
+            &-txt {
+                padding-right: 2rem;
+            }
+            &-img {
+                padding-left: 2rem;
+                border-left: 1px solid $light-gray;
+            }
+        }
+        &-articles-cell {
+            &:nth-of-type(2) {
+                border-top: none;
+                padding-top: 0;
+            }
+            &:nth-of-type(odd) {
+                padding-right: 1rem;
+                border-right: 1px solid $light-gray;
+            }
+            &:nth-of-type(even) {
+                padding-left: 1rem;
+            }
+        }
+        &-membership-cell {
+            &:nth-of-type(2) {
+                border-top: 1px solid $light-gray;
+                padding-top: 1.2rem;
+            }
+            &:nth-of-type(odd) {
+                border-right: none;
+                padding-right: 0;
+            }
+            &:nth-of-type(even) {
+                padding-left: 0;
+            }
+        }
+        &-reading-cell {
+            &:nth-of-type(3) {
+                border-top: none;
+                padding-top: 0;
+            }
+            &:nth-of-type(even) {
+                padding-right: 1rem;
+                border-right: 1px solid $light-gray;
+            }
+            &:nth-of-type(odd) {
+                padding-left: 1rem;
+            }
+        }
+    }
+}
+
+
+
+@include breakpoint(large) {
+    // Containers & Modules
+    main {
+        max-width: 70rem;
+        margin: auto;
+        padding: 3rem;
+    }
+  }
