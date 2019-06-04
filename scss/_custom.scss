@@ -151,6 +151,65 @@ main {
                 padding-top: 1.2rem;
             }
         }
+        
+        //article landing page styling
+        &-articles {
+            &-articles-cell {
+                + .mod-section-articles-articles-cell {
+                    border-top: 1px solid $light-gray;
+                    padding-top: 1.2rem;
+                }
+            }
+        }
+
+        //article/newsletter template styling
+        &-text-info {
+            border-bottom: 1px solid $light-gray;
+            padding-bottom: 1.2rem;
+            .p-info {
+                color: $dark-gray;
+            }
+            .p-desc {
+                font-weight: 600;
+                &:first-letter {
+                    float: left;
+                    color: $darkest-gray;
+                    font-size: 2.9rem;
+                    font-weight: 300;
+                    line-height: 2.5rem;
+                    padding-top: 0.3rem;
+                    padding-right: 0.2rem;
+                }
+            }
+        }
+        &-text-content {
+            padding-top: 1.2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 1px solid $light-gray;
+            &-section {
+                h2 {
+                    font-size: 1.4rem;
+                    margin-bottom: -0.4rem;
+                }
+                p:first-of-type {
+                    padding-top: 1.2rem;
+                }
+                p:first-of-type:first-letter{
+                    float: left;
+                    color: $darkest-gray;
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                    line-height: 1.6rem;
+                    margin-top: -0.2rem;
+                }
+                + .mod-section-text-content-section {
+                    padding-top: 1.2rem;
+                }
+            }
+        }
+        &-text-download {
+            margin-top: 1.2rem;
+        }
     }
 }
 
