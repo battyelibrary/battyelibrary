@@ -9,4 +9,4 @@
             </div>
         </div>
     </form>
-</div>
+</div> <!-- end .mod-form-search -->

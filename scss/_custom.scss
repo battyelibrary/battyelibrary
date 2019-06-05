@@ -100,6 +100,23 @@ main {
                 }    
             }
         }
+        &-readmore {
+            h2 {
+                font-size: 0.8rem;
+            }
+            p {
+                margin-top: -0.5rem;
+                font-size: 0.8rem;
+                color: $dark-gray;
+            }
+            &-cell + .mod-section-readmore-cell {
+                padding-top: 1.2rem;
+                border-top: 1px solid $light-gray;
+            }
+            &-cell-txt {
+                padding-left: 1.2rem;
+            }
+        }
         &-membership-cell {
             p {
                 color: $darker-gray;
@@ -162,11 +179,12 @@ main {
             }
         }
 
-        //article/newsletter template styling
+        //article+newsletter template styling
         &-text-info {
             border-bottom: 1px solid $light-gray;
             padding-bottom: 1.2rem;
             .p-info {
+                margin-top: -0.5rem;
                 color: $dark-gray;
             }
             .p-desc {
@@ -184,8 +202,8 @@ main {
         }
         &-text-content {
             padding-top: 1.2rem;
-            margin-bottom: 1.2rem;
-            border-bottom: 1px solid $light-gray;
+            text-align: justify;
+            text-justify: auto;
             &-section {
                 h2 {
                     font-size: 1.4rem;
@@ -206,9 +224,6 @@ main {
                     padding-top: 1.2rem;
                 }
             }
-        }
-        &-text-download {
-            margin-top: 1.2rem;
         }
     }
 }

@@ -13,7 +13,4 @@
         <?php echo $articleContent; ?>
     </div> <!-- end .mod-section-text-content -->
 
-    <div class="mod-section-txt-download cell small-12">
-        <a href="#" class="readmore">Download PDF <i class="far fa-arrow-alt-circle-down fa-lg"></i></a>
-    </div>
-</div>
+</div> <!-- end .mod-section-text -->
