@@ -52,6 +52,7 @@ Finally, run `npm start` to run the Sass compiler. It will re-run every time you
 # Friends of Battye Library Developer Notes
 
 ## PAGE SETUP
+
 View newpage.php for page setup example
 
 Include header at the very beginning of each page:
@@ -64,32 +65,58 @@ Wrap all page content within `<main>` tags.
 
 
 ## INCLUDING MODULES
+
 Include modules within `<section>` tags:
     `//COMMENT SECTION NAME & INFO`
     `<?php include 'modules/MODULE-NAME-HERE';?>`
     Give sections the class `mod` and any additional classes required by Foundation
 
 ## DEVELOPING MODULES
+
 ### Class naming conventions:
 Naming modules:
-    mod-MODULETYPE-MODULENAME
-    e.g.   mod-section-fw
 
-Nested elements:
+    mod-MODULETYPE-MODULENAME
+
+    e.g.   mod-section-readmore
+
+Naming nested elements:
+
     Retain parent class name and add onto it
+
     mod-MODULETYPE-MODULENAME-CHILDNAME
-    e.g.    mod-section-fw-img,
-            mod-section-fw-txt
+
+    e.g.    mod-section-readmore-cell-img,
+
+            mod-section-readmore-cell-txt
 
     This makes it easier to target nested elements in SASS
-    e.g.    mod-section-fw {
-                &:img {
+
+    e.g.    ```mod-section-readmore-cell {
+                &-img {
                     //styling
                 }
-                &:txt {
+                &-txt {
                     //styling
                 }
             }
+            ```
+
+
+Repeatable elements:
+
+    Give repeatable elements the class -cell
+
+    e.g     ```<div class="mod-section-readmore-cell">
+                    Content
+            </div>
+            ```
 
 Images:
+
     Give all image containers the class `img-styling`
+
+    e.g     ```<div class="mod-section-readmore-cell-img img-styling cell small-3">
+                    <img src="...">
+            </div>
+            ```
