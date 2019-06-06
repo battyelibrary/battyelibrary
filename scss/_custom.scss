@@ -40,7 +40,7 @@ h2 {
     font-weight: 700;
 }
 h3 {
-    font-weight: 300;
+    font-weight: 600;
 }
 h4 {
     @include mont($weight: 500, $trans: uppercase);
@@ -55,7 +55,16 @@ h6 {
 p {
     font-size: 0.9rem;
 }
+p + ul li {
+    font-size: 0.8rem;
+    margin-left: 1.2rem;
+}
 b {
+    font-weight: 600;
+}
+address {
+    font-size: 0.9rem;
+    font-style: normal;
     font-weight: 600;
 }
 
@@ -119,9 +128,11 @@ main {
         }
         &-membership-cell {
             p {
-                color: $darker-gray;
+                @include mont($size: 0.9rem, $color: $darker-gray, $weight: 300);
                 span {
-                    @include mont($size: 0.9rem, $color: $darkest-gray, $weight: 500, $trans: uppercase);
+                    color: $darkest-gray;
+                    font-weight: 500;
+                    text-transform: uppercase;
                 }
             }
             + .mod-section-membership-cell {
@@ -166,6 +177,19 @@ main {
             + .mod-section-projects-cell {
                 border-top: 1px solid $light-gray;
                 padding-top: 1.2rem;
+            }
+        }
+
+        //about page styling
+        &-committee-about {
+            margin-top: 1.7rem;
+            border-top: 1px solid $medium-gray;
+            h3 {
+                @include mont($size: 0.8rem, $color: $dark-gray, $weight: 300, $trans: uppercase);
+                margin-bottom: 0.1rem;
+            }
+            p {
+                font-size: 0.8rem;
             }
         }
         

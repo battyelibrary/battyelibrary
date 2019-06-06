@@ -9,7 +9,7 @@ include 'templates/header.php';?>
     
     <div class="column column-left cell small-12 medium-8">
         <section class="mod mod-section-articles-articles">
-            <?php include 'modules/articles-page/mod-section-articles.php'?>
+            <?php include 'modules/mod-section-articles-list.php'?>
         </section> <!-- end .mod-section-articles-articles -->
     </div> <!-- end .column-left -->
 

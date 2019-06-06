@@ -23,10 +23,7 @@ include 'templates/header.php';?>
 <div class="column column-left cell small-12 medium-8">
     <!-- Meetings Section -->
     <section class="mod mod-section-event-index cell small-12">
-        <?php
-
-        include 'modules/mod-section-events.php';
-        ?>
+        <?php include 'modules/mod-section-events.php';?>
     </section> <!-- end .mod-section-event-index -->
 
     <!-- Membership Section (Mobile Only) -->

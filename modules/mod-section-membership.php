@@ -1,5 +1,4 @@
 <div class="mod-section-membership">
-    <h1>Membership</h1>
     <div class="grid-x">
         <div class="mod-section-membership-cell cell small-6 medium-12">
             <h2>Standard Annual Membership</h2>
