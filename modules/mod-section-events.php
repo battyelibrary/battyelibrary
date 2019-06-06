@@ -1,5 +1,4 @@
 <div class="mod-section-event">
-    <h1>Upcoming Meetings & Events</h1>
     <h2>Effects of 1914 - 1918 War</h2>
     <table class="mod-section-event-table">
         <tr>

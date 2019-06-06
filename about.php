@@ -21,14 +21,14 @@ include 'templates/header.php';?>
     <!-- LEFT COLUMN -->
     <div class="column column-left cell small-12 medium-8">
         <!-- History -->
-        <section class="mod mod-section-history-about cell small-12" id="history">
+        <section class="mod cell small-12" id="history">
             <h1>History</h1>
             <p>Collecting of Western Australian historical archival records started in 1894. In 1956, the Battye Library became a separate entity and was named after the first librarian, James Sykes Battye. Both government and private material was collected dating from 17th century journey of exploration.</p>
             <p>In 1988, the records of government were transferred to the State Archives, renamed the Public Records Office in 1995. It was separated from the State Library in 1999 and became the State Records Office (SRO). Under the State Records Act, SRO is responsible for Managing, preserving and providing access to the archives of state and local governments.</p>
-        </section> <!-- end .mod-section-about-history -->
+        </section>
 
         <!-- Aims & Goals -->
-        <section class="mod mod-section-aims-about cell small-12" id="aims-goals">
+        <section class="mod cell small-12" id="aims-goals">
             <h1>Aims & Goals</h1>
             <p>The Friends of Battye Library aims are to assist with the acquisition, preservation and use of archival and documentary material by:</p>
                 <ul>
@@ -53,16 +53,16 @@ include 'templates/header.php';?>
                     <li>Electronic publications</li>
                     <li>Films, videotapes, and DVDs</li>
                 </ul>
-        </section> <!-- end .mod-section-about-aims -->
+        </section> <!-- end -->
     </div> <!-- end .column-left -->
     
     <!-- RIGHT COLUMN -->
     <div class="column column-right cell show-for-medium medium-4">
         <!-- Membership -->
-        <section class="mod mod-section-member-about cell medium-12 show-for-medium">
+        <section class="mod cell medium-12 show-for-medium">
             <h1>Membership</h1>
             <?php include 'modules/mod-section-membership.php';?>
-        </section> <!-- end .mod-section-member-about -->
+        </section>
     </div> <!-- end .column-right -->
 
     <!-- Committee -->
@@ -121,10 +121,10 @@ include 'templates/header.php';?>
     </section> <!-- end .mod-section-committee-about -->
 
     <!-- Contact -->
-    <section class="mod mod-section-about-contact cell small-12">
+    <section class="mod cell small-12">
         <h1>Contact Us</h1>
         <div class="grid-x">
 
         </div> <!-- end .grid-x -->
-    </section> <!-- end .mod-section-about-contact -->
+    </section>
 </main>

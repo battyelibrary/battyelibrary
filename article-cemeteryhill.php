@@ -6,7 +6,7 @@ include 'templates/header.php';?>
 <main class="grid-x">
     <!-- LEFT COLUMN -->
     <div class="column column-left cell small-12 medium-8">
-        <section class="mod mod-section-article">
+        <section class="mod">
             <!-- Main Article Content -->
             <?php
                 $articleImg="https://placehold.it/1000x450/999?text=Article-IMG";
@@ -42,25 +42,37 @@ include 'templates/header.php';?>
                 ";
                 include 'modules/mod-section-text.php';
             ?>
-        </section> <!-- end .mod mod-section-article -->
+        </section>
 
-        <section class="mod mod-section-download-cemeteryhill">
+        <section class="mod">
             <?php 
                 include 'modules/mod-section-download.php';
             ?>
         </section>
 
         <!-- More Articles -->
-        <section class="mod mod-section-readmore-cemeteryhill">
+        <section class="mod">
             <h1>More Articles</h1>
-            <?php
-                $readMoreImg="https://placehold.it/400x250/999?text=Article-IMG";
-                $readMoreImgAlt="Reflections on the Health of Perth";
-                $readMoreHeader="Reflections on the Health of Perth Through the Lives of Those Buried at East Perth Cemetery";
-                $readMoreAuthor="Lorraine Clarke & Cherie Strickland";
-                $readMoreDate="01.08.2014";
-                include 'modules/mod-section-readmore.php';
-            ?>    
+            <div class="mod-section-readmore cell small-12">
+                <!-- Reflections on the Health of Perth -->
+                <?php
+                    $readMoreImg="https://placehold.it/400x250/999?text=Article-IMG";
+                    $readMoreImgAlt="Reflections on the Health of Perth";
+                    $readMoreHeader="Reflections on the Health of Perth Through the Lives of Those Buried at East Perth Cemetery";
+                    $readMoreAuthor="Lorraine Clarke & Cherie Strickland";
+                    $readMoreDate="01.08.2014";
+                    include 'modules/mod-section-readmore.php';
+                ?>
+                <!-- Super-VC and Two Croix de Guerre -->
+                <?php
+                    $readMoreImg="https://placehold.it/400x250/999?text=Article-IMG";
+                    $readMoreImgAlt="Super-VC and Two Croix de Guerre";
+                    $readMoreHeader="Super-VC and Two Croix de Guerre - The Life of Lt. Lawrence Dominic McArthy VC";
+                    $readMoreAuthor="Robert K. O'Connor QC";
+                    $readMoreDate="09.11.2012";
+                    include 'modules/mod-section-readmore.php';
+                ?>
+            </div> <!-- end .mod-section-readmore --> 
         </section>        
 
     </div> <!-- end .column-left -->
@@ -68,10 +80,17 @@ include 'templates/header.php';?>
     <!-- RIGHT COLUMN -->
     <div class="column column-right cell show-for-medium medium-4">
         <!-- search bar -->
-        <section class="mod mod-section-article-search">
+        <section class="mod">
             <h1>Search Articles</h1>
             <?php include 'modules/mod-form-search.php'?>
-        </section> <!-- end .mod-section-articles-search -->
+        </section>
+
+        <!-- latest articles -->
+        <section class="mod cell small-12">
+            <h1>Latest Articles</h1>
+
+        </section>
+
     </div> <!-- end .column-right -->
 </main> <!-- end .grid-x -->
 

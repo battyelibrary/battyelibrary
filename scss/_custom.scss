@@ -109,20 +109,20 @@ main {
                 }    
             }
         }
-        &-readmore {
-            h2 {
-                font-size: 0.8rem;
-            }
-            p {
-                margin-top: -0.5rem;
-                font-size: 0.8rem;
-                color: $dark-gray;
-            }
-            &-cell + .mod-section-readmore-cell {
+        &-readmore-cell {
+            + .mod-section-readmore-cell {
                 padding-top: 1.2rem;
                 border-top: 1px solid $light-gray;
             }
-            &-cell-txt {
+            &-txt {
+                h2 {
+                    font-size: 0.9rem;
+                }
+                p {
+                    margin-top: -0.5rem;
+                    font-size: 0.9rem;
+                    color: $dark-gray;
+                }    
                 padding-left: 1.2rem;
             }
         }
@@ -181,6 +181,9 @@ main {
         }
 
         //about page styling
+        &-about-about {
+            border-bottom: 1px solid $medium-gray;
+        }
         &-committee-about {
             margin-top: 1.7rem;
             border-top: 1px solid $medium-gray;
@@ -194,12 +197,10 @@ main {
         }
         
         //article landing page styling
-        &-articles {
-            &-articles-cell {
-                + .mod-section-articles-articles-cell {
-                    border-top: 1px solid $light-gray;
-                    padding-top: 1.2rem;
-                }
+        &-articlelist-cell {
+            + .mod-section-articlelist-cell {
+                border-top: 1px solid $light-gray;
+                padding-top: 1.2rem;
             }
         }
 

@@ -1,5 +1,4 @@
 <div class="mod-section-articles">
-    <h1>Latest Articles</h1>
     <div class="grid-x">
         <div class="mod-section-articles-cell cell small-12 medium-6">
             <div class="mod-section-articles-cell-img img-styling">

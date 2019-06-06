@@ -1,5 +1,4 @@
 <div class="mod-section-reading">
-    <h1>Further Reading</h1>
     <div class="grid-x">
         <div class="mod-section-reading-primary cell small-12">
             <div class="mod-section-reading-primary-img img-styling">

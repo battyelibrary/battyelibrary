@@ -1,4 +1,3 @@
-<div class="mod-section-readmore cell small-12">
     <div class="mod-section-readmore-cell grid-x">
         <div class="mod-section-readmore-cell-img img-styling cell small-3">
             <?php echo "<img src='$readMoreImg' alt='$readMoreImgAlt'>"; ?>
@@ -8,4 +7,3 @@
             <p><?php echo $readMoreAuthor . " | " . $readMoreDate; ?></p>
         </div>
     </div> <!-- end .mod-section-readmore-cell -->
-</div> <!-- end .mod-section-readmore -->

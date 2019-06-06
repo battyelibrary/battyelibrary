@@ -22,49 +22,57 @@ include 'templates/header.php';?>
 <!-- LEFT COLUMN -->
 <div class="column column-left cell small-12 medium-8">
     <!-- Meetings Section -->
-    <section class="mod mod-section-event-index cell small-12">
+    <section class="mod cell small-12">
+        <h1>Upcoming Meetings & Events</h1>
         <?php include 'modules/mod-section-events.php';?>
-    </section> <!-- end .mod-section-event-index -->
+    </section>
 
     <!-- Membership Section (Mobile Only) -->
-    <section class="mod mod-section-member-index cell small-12 hide-for-medium">
+    <section class="mod cell small-12 hide-for-medium">
+        <h1>Membership</h1>
         <?php
 
         include 'modules/mod-section-membership.php';
         ?>
-    </section> <!-- end .mod-section-member-index -->
+    </section>
 
     <!-- Articles Section -->
-    <section class="mod mod-section-articles-index cell small-12">
-        <?php
-        
-        include 'modules/mod-section-articles.php';
-        ?>
-    </section> <!-- end .mod-section-articles-index -->
+    <section class="mod cell small-12">
+        <h1>Latest Articles</h1>
+        <?php include 'modules/mod-section-articles.php';?>
+    </section>
 
     <!-- Publications Section (Mobile Only) -->
-    <section class="mod mod-section-publication-index cell small-12 hide-for-medium">
-        <?php
-        
-        include 'modules/mod-section-publications.php';
-        ?>
-    </section> <!-- end .mod-section-publication-index -->
+    <section class="mod cell small-12 hide-for-medium">
+        <h1>Publications</h1>
+        <?php include 'modules/mod-section-publications.php';?>
+    </section>
 
     <!-- Further Reading Section -->
-    <section class="mod mod-section-reading-index cell small-12">
-        <?php
-
-        include 'modules/mod-section-reading.php';
-        ?>
-    </section> <!-- end .mod-section-reading-index -->
+    <section class="mod cell small-12">
+        <h1>Further Reading</h1>
+        <?php include 'modules/mod-section-reading.php'; ?>
+    </section>
 
     <!-- Current Projects Section (Mobile Only) -->
-    <section class="mod mod-section-projects-index cell small-12 hide-for-medium">
-        <?php
-        
-        include 'modules/mod-section-projects.php';
-        ?>
-    </section> <!-- end .mod-section-projects-index -->
+    <section class="mod cell small-12 hide-for-medium">
+        <h1>Current Projects</h1>
+        <div class="mod-section-textcell">
+            <!-- East Perth Cemeteries -->
+            <?php
+            $cellTitle="East Perth Cemeteries";
+            $cellText="The graves of East Perth Cemeteries are a record of the first 70 years of European migration to what is now Perth, Western Australia.";
+            include 'modules/mod-section-textcell.php';
+            ?>
+            <!-- Perth Metro Plans Project -->
+            <?php
+            $cellTitle="Perth Metro Plans Project";
+            $cellText="Digitising and geo-referencing Perth's historical Sewerage Plans to provide a fresh perspective on the past hundred years of metropolitan development.";
+            include 'modules/mod-section-textcell.php';
+            ?>
+            <a href="#" class="button">View Projects</a>
+        </div> <!-- end .mod-section-textcell -->
+    </section>
 
 </div> <!-- end .column-left -->
 
@@ -72,28 +80,56 @@ include 'templates/header.php';?>
 <!-- RIGHT COLUMN -->
 <div class="column column-right cell show-for-medium medium-4">
     <!-- Membership Section -->
-    <section class="mod mod-section-member-index cell medium-12 show-for-medium">
-        <?php
-        
-        include 'modules/mod-section-membership.php';
-        ?>
-    </section> <!-- end .mod-section-member-index -->
+    <section class="mod cell medium-12 show-for-medium">
+        <h1>Membership</h1>
+        <?php include 'modules/mod-section-membership.php';?>
+    </section>
 
     <!-- Publications Section -->
-    <section class="mod mod-section-publication-index cell medium-12 show-for-medium">
-        <?php
-        
-        include 'modules/mod-section-publications.php';
-        ?>
-    </section> <!-- end .mod-section-publication-index -->
+    <section class="mod cell medium-12 show-for-medium">
+        <h1>Publications</h1>
+        <div class="mod-section-publications">
+            <!-- Australia's Last Convicts -->
+            <?php
+            $cellImg="https://placehold.it/300x400/999?text=Publication-IMG";
+            $cellImgAlt="Australia's Last Convicts";
+            $cellTitle="Australia's Last Convicts";
+            $cellText="This publication contains 74 photographs of West Australian Convicts.";
+            include 'modules/mod-section-img-textcell.php';
+            ?>
+            <!-- Convict Records of Western Australia -->
+            <?php
+            $cellImg="https://placehold.it/300x400/999?text=Publication-IMG";
+            $cellImgAlt="Convict Records of Western Australia";
+            $cellTitle="Convict Records of Western Australia";
+            $cellText="Suggested steps for tracing convict records in Western Australia.";
+            include 'modules/mod-section-img-textcell.php';
+            ?>
+        <a href="#" class="button">View Publications</a>
+        </div> <!-- end .mod-section-publications -->
+    </section>
 
     <!-- Current Projects Section -->
-    <section class="mod mod-section-projects-index cell medium-12 show-for-medium">
-        <?php
-        
-        include 'modules/mod-section-projects.php';
-        ?>
-    </section> <!-- end .mod-section-projects-index -->
+    <section class="mod cell medium-12 show-for-medium">
+        <h1>Current Projects</h1>
+        <div class="mod-section-textcell">
+            <!-- East Perth Cemeteries -->
+            <?php
+            $cellTitle="East Perth Cemeteries";
+            $cellText="The graves of East Perth Cemeteries are a record of the first 70 years of European migration to what is now Perth, Western Australia.";
+            include 'modules/mod-section-textcell.php';
+            ?>
+        </div>
+        <div class="mod-section-textcell">
+            <!-- Perth Metro Plans Project -->
+            <?php
+            $cellTitle="Perth Metro Plans Project";
+            $cellText="Digitising and geo-referencing Perth's historical Sewerage Plans to provide a fresh perspective on the past hundred years of metropolitan development.";
+            include 'modules/mod-section-textcell.php';
+            ?>
+            <a href="#" class="button">View Projects</a>
+        </div> <!-- end .mod-section-textcell -->
+    </section>
 
 </div> <!-- end .column-right -->
 </main>

@@ -67,17 +67,13 @@ Wrap all page content within `<main>` tags.
 Include modules within `<section>` tags:
     `//COMMENT SECTION NAME & INFO`
     `<?php include 'modules/MODULE-NAME-HERE';?>`
-    Give sections the class `.mod`.
+    Give sections the class `mod` and any additional classes required by Foundation
 
 ## DEVELOPING MODULES
 ### Class naming conventions:
 Naming modules:
     mod-MODULETYPE-MODULENAME
     e.g.   mod-section-fw
-
-Unique class for targeting specific modules:
-    mod-MODULETYPE-MODULENAME
-    e.g.   mod-section-index
 
 Nested elements:
     Retain parent class name and add onto it
