@@ -21,6 +21,20 @@
     }
 
     // Interactivity
+    @mixin link-trans ($link, $visited, $hover) {
+        & {
+            color: $link;
+            transition: 0.5s;
+            &:visited {
+                color: scale-color($link, $lightness: -50%);
+            }
+            &:active,
+            &:hover,
+            &:focus {
+                color: $hover;
+            }
+        }
+    }
 
 // STYLING    
 
@@ -99,7 +113,7 @@ z-index: 5;
         background-color: $white;
         border-bottom: 1px solid $light-gray;
         a {
-            color: $darkest-gray;
+            @include link-trans($darkest-gray, $primary-color, $primary-color);
         }
         &-logo-img {
             height: 3rem;
@@ -122,13 +136,14 @@ z-index: 5;
                     border-top: 1px solid $light-gray;
                 }
                 a {
+                    @include link-trans($darkest-gray, $primary-color, $primary-color);
                     @include mont($size: 0.7rem, $color: $darkest-gray, $weight: 500, $trans: uppercase); 
                 }
             }
         }
         &-logo {
             a {
-                color: $darkest-gray;
+                @include link-trans($darkest-gray, $primary-color, $primary-color);
                 font-weight: 700;
             }
             &-img {
@@ -205,7 +220,7 @@ z-index: 5;
                 h2 {
                     font-size: 0.9rem;
                     a {
-                        color: $darkest-gray;
+                        @include link-trans($darkest-gray, $primary-color, $primary-color);
                     }
                 }
                 p {
@@ -243,7 +258,7 @@ z-index: 5;
         }
         &-articles-cell {
             h2 a {
-                color: $darkest-gray;
+                @include link-trans($darkest-gray, $primary-color, $primary-color);
             }
             + .mod-section-articles-cell {
                 border-top: 1px solid $light-gray;
@@ -253,7 +268,7 @@ z-index: 5;
 
         &-textcell-cell {
             h2 a {
-                color: $darkest-gray;
+                @include link-trans($darkest-gray, $primary-color, $primary-color);
             }
             + .mod-section-textcell-cell {
                 border-top: 1px solid $light-gray;
@@ -263,7 +278,7 @@ z-index: 5;
 
         &-sb-imgtxt-cell {
             h2 a {
-                color: $darkest-gray;
+                @include link-trans($darkest-gray, $primary-color, $primary-color);
             }
             + .mod-section-sb-imgtxt-cell {
                 border-top: 1px solid $light-gray;
@@ -273,7 +288,7 @@ z-index: 5;
 
         &-sb-textcell-cell {
             h2 a {
-                color: $darkest-gray;
+                @include link-trans($darkest-gray, $primary-color, $primary-color);
             }
             + .mod-section-sb-textcell-cell {
                 border-top: 1px solid $light-gray;
@@ -322,7 +337,7 @@ z-index: 5;
                 padding-top: 1.2rem;
             }
             h2 a {
-                color: $darkest-gray;
+                @include link-trans($darkest-gray, $primary-color, $primary-color);
             }
         }
 
