@@ -46,6 +46,7 @@ include 'templates/header.php';?>
 
         <section class="mod">
             <?php 
+                $cellDownload="#";
                 include 'modules/mod-section-download.php';
             ?>
         </section>
@@ -56,6 +57,7 @@ include 'templates/header.php';?>
             <div class="mod-section-readmore cell small-12">
                 <!-- Reflections on the Health of Perth -->
                 <?php
+                    $readMoreHref="#";
                     $readMoreImg="https://placehold.it/400x250/999?text=Article-IMG";
                     $readMoreImgAlt="Reflections on the Health of Perth";
                     $readMoreHeader="Reflections on the Health of Perth Through the Lives of Those Buried at East Perth Cemetery";

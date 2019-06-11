@@ -21,14 +21,6 @@
     }
 
     // Interactivity
-    @mixin hover {
-        transition: 0.3s;
-        &:hover,
-        &:active,
-        &:focus {
-            $hover: false;
-        }
-    }
 
 // STYLING    
 
@@ -82,7 +74,97 @@ address {
 
 // Containers & Modules
 main {
-    padding: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+// Navigation
+.no-js {
+    @include breakpoint(small only) {
+      .top-bar {
+        display: none;
+      }
+    }
+}
+[data-sticky] {
+width:100%;
+}
+.sticky-container {
+z-index: 5;
+}
+
+.main-nav {
+    &-titlebar {
+        padding: 1rem 2.4rem 0.9rem 2.4rem;
+        background-color: $white;
+        border-bottom: 1px solid $light-gray;
+        a {
+            color: $darkest-gray;
+        }
+        &-logo-img {
+            height: 3rem;
+            margin-right: 1.2rem;
+        }
+    }
+    &-topbar {
+        background-color: $white;
+        border-bottom: 1px solid $light-gray;
+        ul {
+            @include breakpoint(small only) {
+                width: 100%;
+            }          
+            background-color: $white;
+            li {
+                @include breakpoint(small only) {
+                    padding-right: 1rem;
+                    padding-left: 1rem;
+                    width: 100%;
+                    border-top: 1px solid $light-gray;
+                }
+                a {
+                    @include mont($size: 0.7rem, $color: $darkest-gray, $weight: 500, $trans: uppercase); 
+                }
+            }
+        }
+        &-logo {
+            a {
+                color: $darkest-gray;
+                font-weight: 700;
+            }
+            &-img {
+                height: 3rem;
+                margin-right: 1.2rem;
+            }
+        }
+        &-search {
+            @include breakpoint(small only) {
+                width: 100%;
+                padding-top: 1rem;
+            }
+            margin-left: 1rem;
+            &-bar {
+                width: 20rem;
+                height: 2rem;
+                border: 2px solid $medium-gray;
+                border-right: none;
+                border-radius: 20px 0 0 20px;
+                @include mont($size: 0.8rem, $color: $darkest-gray, $weight: 200);
+                &::placeholder {
+                    padding-left: 0.5rem;
+                    @include mont($size: 0.7rem, $color: $medium-gray, $weight: 500, $trans: uppercase);
+                }
+            }
+            &-btn {
+                display: inline-block;
+                width: 2.5rem;
+                height: 2rem;
+                margin-left: -1.5rem;
+                background-color: $light-gray;
+                border: 2px solid $medium-gray;
+                border-radius: 0px 20px 20px 0px;
+            }
+        }
+    }
 }
 
 .mod {
@@ -109,6 +191,11 @@ main {
                 }    
             }
         }
+        &-readings-index {
+            padding-bottom: 1.2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 1px solid $light-gray;
+        }
         &-readmore-cell {
             + .mod-section-readmore-cell {
                 padding-top: 1.2rem;
@@ -117,6 +204,9 @@ main {
             &-txt {
                 h2 {
                     font-size: 0.9rem;
+                    a {
+                        color: $darkest-gray;
+                    }
                 }
                 p {
                     margin-top: -0.5rem;
@@ -152,27 +242,45 @@ main {
             }
         }
         &-articles-cell {
+            h2 a {
+                color: $darkest-gray;
+            }
             + .mod-section-articles-cell {
                 border-top: 1px solid $light-gray;
                 padding-top: 1.2rem;
             }
         }
-        &-publications-cell {
-            + .mod-section-publications-cell {
+
+        &-textcell-cell {
+            h2 a {
+                color: $darkest-gray;
+            }
+            + .mod-section-textcell-cell {
                 border-top: 1px solid $light-gray;
                 padding-top: 1.2rem;
             }
         }
-        &-reading-cell {
-            + .mod-section-reading-cell {
+
+        &-sb-imgtxt-cell {
+            h2 a {
+                color: $darkest-gray;
+            }
+            + .mod-section-sb-imgtxt-cell {
                 border-top: 1px solid $light-gray;
                 padding-top: 1.2rem;
             }
         }
-        &-reading-primary {
-            border-bottom: 1px solid $light-gray;
-            margin-bottom: 1.2rem;
+
+        &-sb-textcell-cell {
+            h2 a {
+                color: $darkest-gray;
+            }
+            + .mod-section-sb-textcell-cell {
+                border-top: 1px solid $light-gray;
+                padding-top: 1.2rem;
+            }
         }
+
         &-projects-cell {
             + .mod-section-projects-cell {
                 border-top: 1px solid $light-gray;
@@ -195,12 +303,26 @@ main {
                 font-size: 0.8rem;
             }
         }
+        &-contact-map {
+            position: relative;
+            padding-bottom: 75%;
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100% !important;
+                height: 100% !important;
+            }
+        }
         
         //article landing page styling
         &-articlelist-cell {
             + .mod-section-articlelist-cell {
                 border-top: 1px solid $light-gray;
                 padding-top: 1.2rem;
+            }
+            h2 a {
+                color: $darkest-gray;
             }
         }
 
@@ -258,9 +380,44 @@ main {
     margin-bottom: 0.8rem;
 }
 
+// Forms
+.contactform {
+    input,
+    textarea {
+        font-size: 0.9rem;
+    }
+    .button {
+        font-size: 0.8rem;
+    }
+}
 
 
-@include breakpoint(medium) {
+
+@include breakpoint(medium) {    
+    // Navigation
+    .main-nav-topbar {
+        ul {
+            @include breakpoint(medium only) {
+                width: 100%;
+            }          
+            li {
+                @include breakpoint(medium only) {
+                    padding-right: 1rem;
+                    padding-left: 1rem;
+                    width: 100%;
+                    border-top: 1px solid $light-gray;
+                }
+            }
+        }
+        &-search {
+            @include breakpoint(medium only) {
+                width: 100%;
+                padding-top: 1rem;
+            }
+        }
+    }
+
+
     // Containers & Modules
     main {
         padding-right: 3rem;
@@ -324,12 +481,37 @@ main {
                 padding-left: 1rem;
             }
         }
+
+        &-textcell-cell {
+            &:nth-of-type(2) {
+                border-top: none;
+                padding-top: 0;
+            }
+            &:nth-of-type(odd) {
+                padding-right: 1rem;
+                border-right: 1px solid $light-gray;
+            }
+            &:nth-of-type(even) {
+                padding-left: 1rem;
+            }
+        }
     }
 }
 
 
 
 @include breakpoint(large) {
+    // Navigation
+    .no-js {
+        .title-bar {
+        display: none;
+        }
+    }
+    .main-nav-topbar {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
     // Containers & Modules
     main {
         max-width: 70rem;

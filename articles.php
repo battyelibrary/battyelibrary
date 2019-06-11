@@ -13,6 +13,8 @@ include 'templates/header.php';?>
             <div class="mod-section-articlelist">
                 <!-- Reflections on the Health of Perth -->
                 <?php
+                $cellHref="#";
+                $cellDownload="#";
                 $cellImg="https://placehold.it/700x350/999?text=Article-IMG";
                 $cellImgAlt="Article Image";
                 $cellTitle="Reflections on the Health of Perth Through the Lives of Those Buried at East Perth Cemetery";
@@ -24,6 +26,8 @@ include 'templates/header.php';?>
 
                 <!-- Tales of the Inhabitants of Cemetery Hill -->
                 <?php
+                $cellHref="article-cemeteryhill.php";
+                $cellDownload="#";
                 $cellImg="https://placehold.it/700x350/999?text=Article-IMG";
                 $cellImgAlt="Article Image";
                 $cellTitle="Tales of the Inhabitants of Cemetery Hill";
@@ -35,6 +39,8 @@ include 'templates/header.php';?>
 
                 <!-- Super-VC and Two Croix de Guerre -->
                 <?php
+                $cellHref="#";
+                $cellDownload="#";
                 $cellImg="https://placehold.it/700x350/999?text=Article-IMG";
                 $cellImgAlt="Article Image";
                 $cellTitle="Super-VC and Two Croix de Guerre - The Life of Lt. Lawrence Dominic McArthy VC";
