@@ -77,7 +77,7 @@ include 'templates/header.php';?>
                     $readMoreDate="01.03.2017";
                     include 'modules/mod-section-readmore.php';
                 ?>
-                <!-- Super-VC and Two Croix de Guerre -->
+                <!-- March November 2016 -->
                 <?php
                     $readMoreImg="https://placehold.it/400x250/999?text=Article-IMG";
                     $readMoreImgAlt="March-November 2016";
@@ -98,11 +98,14 @@ include 'templates/header.php';?>
             <h1>Search Newsletters</h1>
             <?php include 'modules/mod-form-search.php'?>
         </section>
-
+        <!---contributions--->
+        <section class="mod cell small-12">
+            <?php include 'modules/mod-section-contributions.php'?>
+        </section>
         <!-- latest Newsletters -->
         <section class="mod cell small-12">
-            <h1>Latest Newsletters</h1>
-
+            <h1>Newsletters By Year</h1>
+            <?php include 'modules/mod-section-newslist.php'?>
         </section>
 
     </div> <!-- end .column-right -->
