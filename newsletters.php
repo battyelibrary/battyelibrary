@@ -30,6 +30,7 @@ include 'templates/header.php';?>
             <div class="mod-section-articles grid-x">
                 <!-- November 2018 Newsletter -->
                 <?php
+                $cellHref="newsletter-2018.php";
                 $cellImg="https://placehold.it/600x350/999?text=Article-IMG";
                 $cellImgAlt="Article Image";
                 $cellTitle="November 2018 Newsletter";
@@ -39,6 +40,7 @@ include 'templates/header.php';?>
 
                 <!-- July 2018 Newsletter -->
                 <?php
+                $cellHref="#";                
                 $cellImg="https://placehold.it/600x350/999?text=Article-IMG";
                 $cellImgAlt="Article Image";
                 $cellTitle="July 2018 Newsletter";
@@ -48,6 +50,7 @@ include 'templates/header.php';?>
 
                 <!-- March 2018 Newsletter -->
                 <?php
+                $cellHref="#";                
                 $cellImg="https://placehold.it/600x350/999?text=Article-IMG";
                 $cellImgAlt="Article Image";
                 $cellHref="newsletter-march2018.php";
@@ -58,6 +61,7 @@ include 'templates/header.php';?>
 
                 <!-- November 2017 Newsletter -->
                 <?php
+                $cellHref="#";
                 $cellImg="https://placehold.it/600x350/999?text=Article-IMG";
                 $cellImgAlt="Article Image";
                 $cellTitle="November 2017 Newsletter";
@@ -67,6 +71,7 @@ include 'templates/header.php';?>
 
                 <!-- July 2017 Newsletter -->
                 <?php
+                $cellHref="#";
                 $cellImg="https://placehold.it/600x350/999?text=Article-IMG";
                 $cellImgAlt="Article Image";
                 $cellTitle="July 2017 Newsletter";
@@ -76,6 +81,7 @@ include 'templates/header.php';?>
 
                 <!-- March 2017 Newsletter -->
                 <?php
+                $cellHref="#";
                 $cellImg="https://placehold.it/600x350/999?text=Article-IMG";
                 $cellImgAlt="Article Image";
                 $cellTitle="March 2017 Newsletter";
@@ -105,7 +111,7 @@ include 'templates/header.php';?>
             </p>
         </section>
 
-        <!-- about newsletters -->
+        <!-- contributions -->
         <section class="mod cell small-12">
             <h1>Contributions</h1>
             <p>
@@ -115,9 +121,10 @@ include 'templates/header.php';?>
             </p>
         </section>
 
-        <!-- newsletters by date -->
+        <!-- newsletters by year -->
         <section class="mod cell small-12">
             <h1>Newsletters by Year</h1>
+            <?php include 'modules/mod-section-sb-accordion.php'?>
         </section>
 
     </div> <!-- end .column-right -->

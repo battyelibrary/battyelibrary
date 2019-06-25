@@ -73,9 +73,6 @@ address {
     font-style: normal;
     font-weight: 600;
 }
-.listborder {
-    border-top: 1px solid #cacaca;
-}
 
 // Buttons & Interactivity
 .button {
@@ -87,6 +84,20 @@ address {
 }
 .readmore {
     @include mont($size:0.7rem, $weight: 500, $trans: uppercase);
+}
+
+.PDF-reader {
+    width: 100%;
+    height: 550px;
+    background-color: $darker-gray;
+    padding: 1.2rem;
+    color: $white;
+    @include breakpoint(medium) {
+        height: 800px;
+    }
+    @include breakpoint(large) {
+        height: 900px;
+    }
 }
 
 // Containers & Modules
@@ -276,6 +287,26 @@ z-index: 5;
             + .mod-section-textcell-cell {
                 border-top: 1px solid $light-gray;
                 padding-top: 1.2rem;
+            }
+        }
+
+        &-sb-accordion {
+            ul li {
+                border-top: 1px solid $light-gray;
+                @include mont($color: $darkest-gray, $weight: 300);
+                ul li {
+                    border-top: 0;
+                    a {
+                        color: $darker-gray;
+                    }
+                }
+                a {
+                    padding-left: 0;
+                    @include link-trans($darkest-gray, $primary-color, $primary-color);
+                }
+            }
+            ul li:first-of-type {
+                border-top: none;
             }
         }
 
