@@ -50,6 +50,7 @@ include 'templates/header.php';?>
                 <?php
                 $cellImg="https://placehold.it/600x350/999?text=Article-IMG";
                 $cellImgAlt="Article Image";
+                $cellHref="newsletter-march2018.php";
                 $cellTitle="March 2018 Newsletter";
                 $cellText="<b>Our March 2018 Meeting:</b> Dr Fiona Bush OAM presents 'St. Ronan’s Well: When Fiction Becomes Historical Fact.'";
                 include 'modules/mod-section-articles.php';
