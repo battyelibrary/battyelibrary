@@ -5,19 +5,6 @@ include 'templates/header.php';?>
 
 <main class="grid-x">
 <!-- ABOUT -->
-    <!-- About Section -->
-    <section class="mod mod-section-about-about cell small-12">
-        <?php
-        $fwTxt ="<p><b>The Friends of Battye Library (Inc.)</b> was inaugurated on the 6th of July 1981 to support the J. S. Battye Library of West Australian History and the State Archives (now known as the State Records Office of Western Australia).</p>
-        <p>Sir Paul Hasluck was the Friends of Battye Library's first President and since then many distinguished historians, researchers and philanthropists have accepted the role of President and Patron of the organisation.</p>
-        <p>Our aims are to assist with the acquisition, preservation and use of archival and documentary materials.</p>";
-        $fwImgMob = "https://placehold.it/450x250/999?text=About-IMG";
-        $fwImg ="https://placehold.it/300x350/999?text=About-IMG";
-        $fwImgAlt = "Portrait of J. S. Battye";
-        include 'modules/mod-section-fw.php';
-        ?>
-    </section> <!-- end .mod-section-about-about -->
-
     <!-- LEFT COLUMN -->
     <div class="column column-left cell small-12 medium-8">
         <!-- History -->
@@ -66,7 +53,7 @@ include 'templates/header.php';?>
     </div> <!-- end .column-right -->
 
     <!-- Committee -->
-    <section class="mod mod-section-committee-about cell small-12">
+    <section class="mod mod-section-committee-about cell small-12" id="committee">
         <?php
         $fwTxt ="
             <div class='grid-x'>
@@ -121,7 +108,7 @@ include 'templates/header.php';?>
     </section> <!-- end .mod-section-committee-about -->
 
     <!-- Contact -->
-    <section class="mod cell small-12">
+    <section class="mod cell small-12" id="contact">
         <h1>Contact Us</h1>
         <div class="mod-section-contact grid-x">
                 <!-- FORM LEFT COLUMN -->
@@ -152,3 +139,4 @@ include 'templates/header.php';?>
         </div> <!-- end .grid-x -->
     </section>
 </main>
+<?php include 'templates/footer.php'?>

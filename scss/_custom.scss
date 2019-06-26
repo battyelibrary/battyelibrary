@@ -106,6 +106,62 @@ main {
     padding-left: 2rem;
 }
 
+// Footer
+footer {
+    background-color: $darkest-gray;
+    a {
+        padding-left: none;
+        @include mont($size: 0.9rem, $color: $light-gray, $weight: 300);
+        @include link-trans($light-gray, $light-gray, $white);
+    }
+}
+.footer {
+    &-cont {
+        width: 100%;
+        margin: 0 auto;
+        padding: 1.2rem;
+    }
+    &-col {
+        h1 {
+            color: $white;
+        }
+        p {
+            color: $light-gray;
+        }
+        ul li a {
+            @include link-trans($light-gray, $light-gray, $white);
+            padding-left: 0;
+        }
+    }
+    &-links h1 {
+        font-size: 1rem;
+    }
+    &-copyright {
+        margin-top: 1.2rem;
+        padding-top: 1.2rem;
+        border-top: 1px solid $darker-gray;
+        @include mont($size: 0.8rem, $color: $light-gray, $weight: 300);
+        a {
+            @include mont($size: 0.8rem, $color: $light-gray, $weight: 300);
+            @include link-trans($light-gray, $light-gray, $white);
+            + a {
+                padding-left: 2rem;
+            } 
+        }
+    }
+}
+@include breakpoint(medium down){
+    .footer {
+        &-col {
+            margin-top: 2rem;
+        }
+        &-statement {
+            padding-bottom: 1.2rem;
+            border-bottom: 1px solid $darker-gray;
+        }
+    }   
+}
+
 // Navigation
 .no-js {
     @include breakpoint(small only) {
@@ -138,16 +194,19 @@ z-index: 5;
         background-color: $white;
         border-bottom: 1px solid $light-gray;
         ul {
-            @include breakpoint(small only) {
+            @include breakpoint(medium down) {
                 width: 100%;
             }          
             background-color: $white;
             li {
-                @include breakpoint(small only) {
+                @include breakpoint(medium down) {
                     padding-right: 1rem;
                     padding-left: 1rem;
                     width: 100%;
                     border-top: 1px solid $light-gray;
+                    &:first-of-type {
+                        border-top: none;
+                    }
                 }
                 a {
                     @include link-trans($darkest-gray, $primary-color, $primary-color);
@@ -195,6 +254,7 @@ z-index: 5;
         }
     }
 }
+
 
 .mod {
     padding: 2rem 0;
@@ -481,6 +541,11 @@ z-index: 5;
         margin-top: 2rem;
         padding-left: 2rem;
     }
+
+    footer {
+        padding: 1rem;
+    }
+
     .mod-section {
         &-fw {
             &-txt {
@@ -566,5 +631,14 @@ z-index: 5;
         max-width: 70rem;
         margin: auto;
         padding: 3rem;
+    }
+    .footer {
+        &-cont {
+            max-width: 70rem;
+            padding: 3rem;
+        }  
+        &-col {
+            padding-right: 1.2rem;
+        }  
     }
   }
