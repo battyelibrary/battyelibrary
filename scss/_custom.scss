@@ -512,6 +512,14 @@ z-index: 5;
             }
         }
 
+        //sitemap
+        &-sitemap {
+            a {
+                padding-left: 0;
+                font-size: 0.9rem;
+                @include link-trans($darker-gray, $primary-color, $primary-color);
+            }
+        }
     }
 }
 
@@ -640,6 +648,13 @@ z-index: 5;
                 padding-left: 1rem;
             }
         }
+
+        //Sitemap
+        &-sitemap {
+            &:nth-of-type(2) {
+                border-top: none;
+            }
+        }
     }
 }
 
@@ -672,4 +687,14 @@ z-index: 5;
             padding-right: 1.2rem;
         }  
     }
+
+    //Sitemap
+    .mod-section-sitemap {
+        border-top: none !important;
+        + .mod-section-sitemap {
+            padding-left: 1.2rem;
+            border-left: 1px solid $light-gray;
+        }
+    }
+
   }
