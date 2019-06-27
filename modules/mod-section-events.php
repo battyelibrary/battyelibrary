@@ -27,6 +27,4 @@
             </td>
         </tr>
     </table> <!-- end .mod-section-event-table -->
-    <a href="#" class="button">Speakers for 2019</a>
-    <a href="#" class="button">Past Speakers</a>
 </div> <!-- end .mod-section-event -->

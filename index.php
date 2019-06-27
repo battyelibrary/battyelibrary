@@ -25,15 +25,14 @@ include 'templates/header.php';?>
     <section class="mod cell small-12">
         <h1>Upcoming Meetings & Events</h1>
         <?php include 'modules/mod-section-events.php';?>
+        <a href="events.php" class="button">View events for <?php echo date("Y"); ?></a>
     </section>
 
     <!-- Membership Section (Mobile Only) -->
     <section class="mod cell small-12 hide-for-medium">
         <h1>Membership</h1>
-        <?php
-
-        include 'modules/mod-section-membership.php';
-        ?>
+        <?php include 'modules/mod-section-membership.php';?>
+        <a href="membership.php" class="button">Become a Member</a>
     </section>
 
     <!-- Articles Section -->
@@ -104,7 +103,7 @@ include 'templates/header.php';?>
             $cellText="Suggested steps for tracing convict records in Western Australia.";
             include 'modules/mod-section-sb-img-textcell.php';
             ?>
-        <a href="#" class="button">View Publications</a>
+        <a href="shop.php" class="button">View Publications</a>
         </div> <!-- end .mod-section-sb-imgtxt -->
     </section>
 
@@ -173,7 +172,7 @@ include 'templates/header.php';?>
             $cellText="Digitising and geo-referencing Perth's historical Sewerage Plans to provide a fresh perspective on the past hundred years of metropolitan development.";
             include 'modules/mod-section-sb-textcell.php';
             ?>
-            <a href="#" class="button">View Projects</a>
+            <a href="projects.php" class="button">View Projects</a>
         </div> <!-- end .mod-section-sb-textcell -->
     </section>
 
@@ -186,6 +185,7 @@ include 'templates/header.php';?>
     <section class="mod cell medium-12 show-for-medium">
         <h1>Membership</h1>
         <?php include 'modules/mod-section-membership.php';?>
+        <a href="membership.php" class="button">Become a Member</a>
     </section>
 
     <!-- Publications Section -->
@@ -210,7 +210,7 @@ include 'templates/header.php';?>
             $cellText="Suggested steps for tracing convict records in Western Australia.";
             include 'modules/mod-section-sb-img-textcell.php';
             ?>
-        <a href="#" class="button">View Publications</a>
+        <a href="shop.php" class="button">View Publications</a>
         </div> <!-- end .mod-section-sb-imgtxt -->
     </section>
 
@@ -232,7 +232,7 @@ include 'templates/header.php';?>
             $cellText="Digitising and geo-referencing Perth's historical Sewerage Plans to provide a fresh perspective on the past hundred years of metropolitan development.";
             include 'modules/mod-section-sb-textcell.php';
             ?>
-            <a href="#" class="button">View Projects</a>
+            <a href="projects.php" class="button">View Projects</a>
         </div> <!-- end .mod-section-sb-textcell -->
     </section>
 

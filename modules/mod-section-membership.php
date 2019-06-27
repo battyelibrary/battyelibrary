@@ -29,6 +29,5 @@
             <h2>Lifetime Membership</h2>
             <p><span>$500</span></p>
         </div>
-        <a href="#" class="button">Become a Member</a>
     </div> <!-- end .grid-x -->
 </div> <!-- end .mod-section-membership -->
