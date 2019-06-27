@@ -1,29 +1,28 @@
 <div class="mod-section-event">
-    <h2>Effects of 1914 - 1918 War</h2>
+    <h2><?php echo $eventName;?></h2>
     <table class="mod-section-event-table">
         <tr>
             <th>Date</th>
-            <td>13 March 2019</td>
+            <td><?php echo $eventDate;?></td>
         </tr>
         <tr>
             <th>Time</th>
-            <td>5:00pm</td>
+            <td><?php echo $eventTime;?></td>
         </tr>
         <tr>
             <th>Location</th>
             <td>
             <address>
-                Great Southern Room,
-                4th Floor - State Library of Western Australia
+                <?php echo $eventLoc;?>
             </address>
             </td>
         </tr>
         <tr>
             <th class="mod-section-event-table-info">Info</th>
             <td class="mod-section-event-table-info">
-                <b>Topic:</b> Effects of 1914 - 1918 War
-                <br><b>Speaker:</b> Andrew Greene
-                <br>After the meeting, members and guests are invited to join us for dinner at a local restaurant.
+                <b>Topic:</b> <?php echo $eventName;?>
+                <br><b>Speaker:</b> <?php echo $eventSpeaker;?>
+                <p><?php echo $eventDesc;?></p>
             </td>
         </tr>
     </table> <!-- end .mod-section-event-table -->

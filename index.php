@@ -24,7 +24,16 @@ include 'templates/header.php';?>
     <!-- Meetings Section -->
     <section class="mod cell small-12">
         <h1>Upcoming Meetings & Events</h1>
-        <?php include 'modules/mod-section-events.php';?>
+        <?php
+            $eventName="Effects of 1914 - 1918 War";
+            $eventDate="13 March 2019";
+            $eventTime="5:00pm";
+            $eventLoc="Great Southern Room,
+            <br>4th Floor - State Library of Western Australia";
+            $eventSpeaker="Andrew Greene";
+            $eventDesc="After the meeting, members and guests are invited to join us for dinner at a local restaurant.";
+            include 'modules/mod-section-events.php';
+        ?>
         <a href="events.php" class="button">View events for <?php echo date("Y"); ?></a>
     </section>
 
