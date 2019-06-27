@@ -1,7 +1,7 @@
 <?php 
-$pageTitle ="Membership";
+$pageTitle ="Shop";
 include 'templates/header.php';?>
 <main>
-<p>Page awaiting client content & input</p>
+<p>Page Awaiting Client Contentn & Input</p>
 </main>
 <?php include 'templates/footer.php';?>

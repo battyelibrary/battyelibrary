@@ -26,10 +26,10 @@
       </div>
       <ul class="vertical large-horizontal dropdown menu top-bar-right" data-responsive-menu="accordion large-dropdown">
         <li><a href="about.php">About</a></li>
-        <li><a href="#">Membership</a></li>
-        <li><a href="#">Events</a></li>
+        <li><a href="membership.php">Membership</a></li>
+        <li><a href="events.php">Events</a></li>
         <li><a href="articles.php">Articles</a></li>
-        <li><a href="#">Shop</a></li>
+        <li><a href="shop.php">Shop</a></li>
         <li class="main-nav-topbar-search">
             <form>
               <input type="search" name="search" placeholder="Search..." class="main-nav-topbar-search-bar">

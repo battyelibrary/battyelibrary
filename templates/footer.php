@@ -14,9 +14,9 @@
                 <li><a href="about.php">About Us</a></li>
                 <li><a href="about.php#aims-goals">Aims & Goals</a></li>
                 <li><a href="about.php#committee">Committee</a></li>
-                <li><a href="#">Current Projects</a></li>
+                <li><a href="projects.php">Current Projects</a></li>
                 <li><a href="#">Constitution</a></li>
-                <li><a href="#">Funding</a></li>
+                <li><a href="funding.php">Funding</a></li>
               </ul>
             </div> <!-- end .footer-col -->
 
@@ -26,8 +26,8 @@
               <ul class="menu vertical">
                 <li><a href="articles.php">Articles</a></li>
                 <li><a href="newsletters.php">Newsletters</a></li>
-                <li><a href="#">Publications</a></li>
-                <li><a href="#">Jack's Back</a></li>
+                <li><a href="shop.php">Publications</a></li>
+                <li><a href="jacks-back.php">Jack's Back</a></li>
               </ul>
             </div> <!-- end .footer-col -->
 
@@ -37,15 +37,15 @@
               <ul class="menu vertical">
                 <li><a href="http://www.slwa.wa.gov.au/">State Library of WA</a></li>
                 <li><a href="https://www.sro.wa.gov.au/state-records-office-western-australia">State Records Office of WA</a></li>
-                <li><a href="#">Gems of Time</a></li>
-                <li><a href="#">Vale</a></li>
+                <li><a href="gemsoftime.php">Gems of Time</a></li>
+                <li><a href="vale.php">Vale</a></li>
               </ul>
             </div> <!-- end .footer-col -->
 
             <div class="col small-12 footer-copyright">
                 <!-- Copyright -->
                 <span class="float-left">&copy; <?php echo date("Y"); ?> Friends of Battye Library Inc.</span>
-                <span class="float-right"><a href="#">Terms of Use</a><a href="#">Privacy Policy</a><a href="#">Sitemap</a></span>
+                <span class="float-right"><a href="terms-of-use.php">Terms of Use</a><a href="privacy-policy.php">Privacy Policy</a><a href="sitemap.php">Sitemap</a></span>
             </div>
         </div> <!-- end .footer-cont -->
     </footer>   
