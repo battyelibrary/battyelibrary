@@ -481,6 +481,16 @@ z-index: 5;
                 }
             }
         }
+
+        //gems of time page styling
+        &-gems {
+            &-accordion-title {
+                @include mont($trans: uppercase);
+            }
+            &-accordion-content p {
+                font-size: 0.9rem;
+            }
+        }
     }
 }
 
