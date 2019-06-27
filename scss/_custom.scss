@@ -496,14 +496,20 @@ z-index: 5;
             &-accordion-content p {
                 font-size: 0.9rem;
             }
-            &-img {
-                border-top: 1px solid $light-gray;
-                padding-top: 1.2rem;
-            }
         }
 
         //vale page styling
         &-vale {
+            &-accordion-title {
+                @include mont($trans: uppercase);
+            }
+            &-accordion-content p {
+                font-size: 0.9rem;
+            }
+        }
+
+        //events page styling
+        &-event {
             &-accordion-title {
                 @include mont($trans: uppercase);
             }
