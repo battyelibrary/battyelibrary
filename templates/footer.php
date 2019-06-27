@@ -35,8 +35,8 @@
             <div class="col small-6 large-2 footer-col footer-links">
               <h1>Associates & Contributors</h1>
               <ul class="menu vertical">
-                <li><a href="http://www.slwa.wa.gov.au/">State Library of WA</a></li>
-                <li><a href="https://www.sro.wa.gov.au/state-records-office-western-australia">State Records Office of WA</a></li>
+                <li><a href="http://www.slwa.wa.gov.au/" target="_blank">State Library of WA</a></li>
+                <li><a href="https://www.sro.wa.gov.au/state-records-office-western-australia" target="_blank">State Records Office of WA</a></li>
                 <li><a href="gemsoftime.php">Gems of Time</a></li>
                 <li><a href="vale.php">Vale</a></li>
               </ul>
