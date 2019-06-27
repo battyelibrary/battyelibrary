@@ -73,6 +73,12 @@ address {
     font-style: normal;
     font-weight: 600;
 }
+figcaption {
+    font-size: 0.8rem;
+    color: $dark-gray;
+    text-align: center;
+    padding-top: 0.5rem;
+}
 
 // Buttons & Interactivity
 .button {
@@ -490,7 +496,22 @@ z-index: 5;
             &-accordion-content p {
                 font-size: 0.9rem;
             }
+            &-img {
+                border-top: 1px solid $light-gray;
+                padding-top: 1.2rem;
+            }
         }
+
+        //vale page styling
+        &-vale {
+            &-accordion-title {
+                @include mont($trans: uppercase);
+            }
+            &-accordion-content p {
+                font-size: 0.9rem;
+            }
+        }
+
     }
 }
 

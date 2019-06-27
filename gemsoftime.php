@@ -50,7 +50,10 @@ include 'templates/header.php';?>
             <p>
             Presented by the Friends of Battye Committee acknowledging Western Australia's living treasures who have made a long-term and significant commitment to the aims and objectives of the Battye Library and/or the State Records office.
             </p>
-            <img src="https://placehold.it/350x700/999?text=Gems+of+Time+Plaque" alt="Gems of Time Plaque">
+            <figure class="img-styling mod-section-gems-img">
+                <img src="https://placehold.it/350x700/999?text=Gems+of+Time+Plaque" alt="Gems of Time Plaque">
+                <figcaption>Shield on display next to the elevator on floor 3</figcaption>
+            </figure>
         </section>
     </div> <!-- end .column-right -->
 </main>
