@@ -663,6 +663,11 @@ z-index: 5;
             }
         }
 
+        //About Page
+        &-contact-form {
+            border-right: none;
+        }
+
         //Sitemap
         &-sitemap {
             &:nth-of-type(2) {

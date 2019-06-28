@@ -112,7 +112,7 @@ include 'templates/header.php';?>
         <h1>Contact Us</h1>
         <div class="mod-section-contact grid-x">
                 <!-- FORM LEFT COLUMN -->
-                <div class="column column-left cell small-12 medium-6">
+                <div class="column column-left cell small-12 large-6">
                     <form action="" class="contactform mod-section-contact-form">
                         <label for="contact-name">
                             <input type="text" name="name" id="contact-name" placeholder="Full name" required aria-required=”true”>
@@ -131,7 +131,7 @@ include 'templates/header.php';?>
                 </div> <!-- end .column-left -->
 
             <!-- FORM RIGHT COLUMN -->
-            <div class="column column-right cell show-for-medium medium-6">
+            <div class="column column-right cell small-12 large-6">
                 <div class="mod-section-contact-map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.445177295215!2d115.85837631457962!3d-31.94881742940198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bad1237130a5%3A0x28ca68bd4039725f!2sAlexander+Library+Building%2C+Perth+WA+6000!5e0!3m2!1sen!2sau!4v1560129414163!5m2!1sen!2sau" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
