@@ -67,8 +67,8 @@ include 'templates/header.php';?>
     <!-- RIGHT COLUMN -->
     <div class="column column-right cell show-for-medium medium-4">
         <section>
-            <h1>Heading</h1>
-            <p>Lorem Ipsum</p>
+            <h1>Calendar of Events</h1>
+            <div class='calendar'><p>Calendar of Events Widget Goes Here</p></div>
         </section>
     </div> <!-- end .column-right -->
 </main>
